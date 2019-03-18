@@ -1,0 +1,26 @@
+$total-items: 5;
+
+
+.achievement {
+    background-color: transparent;
+    color:black;
+
+    padding-top:50px;
+    padding-bottom:50px;
+    overflow: hidden;
+    
+}
+
+.title {
+    text-align: center;
+vertical-align: middle;
+}
+
+
+li {
+    line-height: 2;
+    animation: fadeIn 0.5s linear;
+  animation-fill-mode: both;
+  }
+
+ 
