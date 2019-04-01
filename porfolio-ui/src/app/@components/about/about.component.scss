@@ -1,55 +1,71 @@
-
 $total-items: 3;
 
+.row {
+    width: 80%;
+}
 .about {
-    background-color: white;
-    color: black;
-    padding-top:80px;
-    padding-bottom:50px;
-    overflow: hidden;
+  background-color: white;
+  color: black;
+  padding-top: 80px;
+  padding-bottom: 50px;
+  overflow: hidden;
 }
 
-h1, h2, h3, h4 {
-    display: inline;
+h1,
+h2,
+h3,
+h4 {
+  display: inline;
 }
 
 .title {
-    text-align: center;
-vertical-align: middle;
-background-color: transparent;
+  text-align: center;
+  vertical-align: middle;
+  background-color: transparent;
+  color: rgb(124, 27, 124);
+    font-size: 50px;
+    font-family: "calibri", Garamond, 'Comic Sans MS';
 }
 
 
+hr {
+  border: 2px solid rgb(124, 27, 124);
+}
+
 li {
-    line-height: 2;
-    animation: fadeIn 0.5s linear;
+  line-height: 2;
+  animation: fadeIn 0.5s linear;
   animation-fill-mode: both;
-  }
+}
 
-  // Set delay per List Item
+// Set delay per List Item
 @for $i from 1 through $total-items {
-    li:nth-child(#{$i}) {
-      animation-delay: .75s * $i;
-    }
+  li:nth-child(#{$i}) {
+    animation-delay: .75s * $i;
   }
-  
-  // Keyframe animation
-  @-webkit-keyframes fadeIn {
-    0% {
-      opacity: 0;
-      top: 100px;
-    }
-    75% {
-      opacity: 0.5;
-      top: 0px;
-    }
-    100% {
-      opacity: 1;
-    }
+}
+
+// Keyframe animation
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    top: 100px;
   }
 
-  @keyframes keyframes{ 
-  
-    from{ width: 0px;} 
-    
-  } 
+  75% {
+    opacity: 0.5;
+    top: 0px;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes keyframes {
+
+  from {
+    width: 0px;
+  }
+
+}

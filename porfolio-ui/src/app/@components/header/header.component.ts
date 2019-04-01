@@ -12,4 +12,13 @@ export class HeaderComponent {
     constructor() {
         
     }
+
+    public toggle(): void {
+        var x = document.getElementById("navbar");
+        if (x.className === "dx-topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "dx-topnav";
+        }
+    }
 }

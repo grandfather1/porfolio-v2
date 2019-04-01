@@ -2,25 +2,31 @@ $total-items: 5;
 
 
 .achievement {
-    background-color: transparent;
-    color:black;
+  background-color: transparent;
+  color: black;
 
-    padding-top:50px;
-    padding-bottom:50px;
-    overflow: hidden;
-    
+  padding-top: 50px;
+  padding-bottom: 50px;
+  overflow: hidden;
+
 }
 
 .title {
-    text-align: center;
-vertical-align: middle;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 50px;
+  color:rgb(187, 103, 7);
+  font-family: "calibri", Garamond, 'Comic Sans MS';
 }
 
 
 li {
-    line-height: 2;
-    animation: fadeIn 0.5s linear;
+  line-height: 2;
+  animation: fadeIn 0.5s linear;
   animation-fill-mode: both;
-  }
+}
 
- 
+
+hr {
+    border: 2px solid rgb(187, 103, 7);
+  }
