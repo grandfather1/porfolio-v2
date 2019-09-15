@@ -1,3 +1,64 @@
-.content {
-    margin: 10px;
+.home-page {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(12, 1fr);
 }
+
+.profil {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(12, 1fr);
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 13;
+    background-color: rgba($color: #000000, $alpha: 0.2);
+}
+
+.intro {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    text-align: center;
+    vertical-align: text-bottom;
+}
+
+.photo-profil {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 13;
+    background-image: url('/assets/imgs/me.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.about {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end:7;
+    background-color: red($color: #ff0000);
+}
+
+
+.achievement {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 7;
+    grid-row-end:13;
+    background-color: red($color: #3a2a58);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  display: inline;
+}
+
+
+

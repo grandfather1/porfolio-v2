@@ -2,9 +2,7 @@ $total-items: 5;
 
 
 .achievement {
-  background-color: transparent;
-  color: black;
-
+    color: black;
   padding-top: 50px;
   padding-bottom: 50px;
   overflow: hidden;
@@ -30,3 +28,14 @@ li {
 hr {
     border: 2px solid rgb(187, 103, 7);
   }
+
+  .project-btn {
+    display: block;
+    width: 100%;
+    border: none; 
+     background-color: #4CAF50;
+
+    cursor: pointer;
+    text-align: center;
+
+}
